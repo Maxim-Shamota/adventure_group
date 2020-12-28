@@ -1,0 +1,57 @@
+.aboutUs {
+    position: relative;
+    height: 650px;
+    background: url(../img/main_bg3.jpg) right no-repeat;
+    background-color: #000000;
+    padding-top: 32px;
+    &__roof {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        padding-top: 55px;
+        padding-left: 128px;
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        span {
+            color: #8dffbb;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+    &__descr {
+        padding-top: 50px;
+        padding-left: 194px;
+        color: #aab1ad;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    &__black-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url(../img/black_bg.png) right;
+        width: 661px;
+        height: 560px;
+        opacity: 0.12;
+    }
+    &__lines-mini {
+        position: absolute;
+        top: 39px;
+        left: 50%;
+    }
+    &__lines-left {
+        position: absolute;
+        top: 316px;
+        left: 0;
+    }
+    &__arrow {
+        position: absolute;
+        top: 522px;
+        left: 194px;
+    }
+}

@@ -1,0 +1,39 @@
+.car {
+    height: 650px;
+    background: url(../../img/main_bg2.jpg) center (center/cover) no-repeat;
+    padding-top: 43px;
+    position: relative;
+    &__roof {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrow-up {
+        padding-left: 74px;
+        height: 20px;
+    }
+    &__arrow-down {
+        position: absolute;
+        top: 530px;
+        left: 24px;
+    }
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 460px;
+        padding-right: 72px;
+        padding-left: 64px;
+        p {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+        }
+    }
+    &__points {
+        width: 460px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+}
