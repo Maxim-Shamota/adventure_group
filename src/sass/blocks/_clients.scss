@@ -1,0 +1,71 @@
+.clients {
+    position: relative;
+    height: 650px;
+    background-color: #15181b;
+    padding-top: 43px;
+    &__roof {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__logos {
+        width: 870px;
+        margin: 0 auto;
+        margin-top: 105px;
+    }
+    &__logos-line {
+        margin-bottom: 58px;
+        
+    }
+    &__logo:not(:last-child) {
+        margin-right: 60px;
+    }
+    &__lines {
+        &-item1 {
+            position: absolute;
+            top: 77px;
+            left: 41%;
+        }
+        &-item2 {
+            position: absolute;
+            top: 129px;
+            left: 54%;
+        }
+        &-item3 {
+            position: absolute;
+            top: 159px;
+            left: 55.5%;
+        }
+        &-arrow {
+            position: absolute;
+            top: 143px;
+            left: 9%;
+        }
+        &-left {
+            position: absolute;
+            bottom: 82px;
+            left: 0;
+        }
+        &-mini1 {
+            position: absolute;
+            bottom: 46px;
+            left: 20px;
+        }
+        &-mini2 {
+            position: absolute;
+            bottom: 88px;
+            right: 97px;
+        }
+        &-down {
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+        }
+    }
+}

@@ -4,6 +4,9 @@
 @import 'blocks/headline';
 @import 'blocks/car';
 @import 'blocks/aboutUs';
+@import 'blocks/clients';
+@import 'blocks/portfolio';
+@import 'blocks/contacts';
 
 * {
     box-sizing: border-box;
@@ -13,4 +16,8 @@
 }
 a {
     color: #fff;
+    &:hover {
+        text-decoration: none;
+        color: #8dffbb;
+    }
 }

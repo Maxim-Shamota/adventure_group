@@ -1,0 +1,122 @@
+.contacts {
+    position: relative;
+    height: 658px;
+    background: url(../img/main_bg4.jpg) center (center/cover) no-repeat;
+    padding-top: 43px;
+    &__roof {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        margin-left: 197px;
+        margin-top: -35px;
+    }
+    &__descr {
+        display: flex;
+        width: 894px;
+        margin-top: 35px;
+        margin-left: 254px;
+        color: #aab1ad;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        &-left {
+            width: 454px;
+        }
+        &-right {
+            margin-left: 112px;
+        }
+    }
+    &__tel {
+        color: #8dffbb;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+    }
+    &__form {
+        margin-left: 257px;
+        margin-top: 46px;
+        width: 840px;
+        &-wrapper {
+            display: flex;
+        }
+        &-col1 {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 307px;
+                margin-bottom: 41px;
+                height: 45px;
+                padding-bottom: 25px;
+                color: #777777;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 2.5px;
+                text-transform: uppercase;
+            }
+            &::placeholder {
+                margin-top: 50px;
+            }
+        }
+        &-col2 {
+            display: flex;
+            flex-direction: column;
+            padding-left: 64px;
+            input {
+                width: 397px;
+                margin-bottom: 41px;
+                height: 45px;
+                padding-bottom: 25px;
+                color: #777777;
+                font-size: 10px;
+                font-weight: 600;
+                letter-spacing: 2.5px;
+                text-transform: uppercase;
+            }
+        }
+        textarea {
+            width: 766px;
+            margin-bottom: 41px;
+            height: 52px;
+            padding-top: 4px;
+            color: #777777;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            resize: none;
+        }
+    }
+    &__down {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        width: 766px;
+        &-politics {
+            display: flex;
+            p {
+                margin-bottom: 0;
+                padding-left: 19px;
+                color: #ffffff;
+                font-size: 15px;
+                font-weight: 400;
+                a {
+                    color: #8dffbb;
+                }
+            }
+        }
+    }
+    &__button {
+        color: #ffffff;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+    
+}
