@@ -15,7 +15,7 @@
         margin-left: -19px;
         &:before {
             content: '';
-            background: url(../icons/main_headline-frame.png);
+            background: url(../icons/main_headline-frame.png) no-repeat;
             top: -8px;
             left: -56px;
             width: 111px;
@@ -26,7 +26,7 @@
     &-contacts {
         &:before {
             content: '';
-            background: url(../icons/main_headline-frame.png);
+            background: url(../icons/main_headline-frame.png) no-repeat;
             top: -8px;
             left: 80px;
             width: 111px;

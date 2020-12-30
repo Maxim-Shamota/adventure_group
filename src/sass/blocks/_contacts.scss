@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-    height: 658px;
+    min-height: 658px;
     background: url(../img/main_bg4.jpg) center (center/cover) no-repeat;
     padding-top: 43px;
     &__roof {
@@ -57,6 +57,13 @@
                 font-weight: 600;
                 letter-spacing: 2.5px;
                 text-transform: uppercase;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #ffffff;
+                outline: none;
+                &:hover {
+                    border-bottom: 1px solid #8dffbb;
+                }
             }
             &::placeholder {
                 margin-top: 50px;
@@ -76,6 +83,13 @@
                 font-weight: 600;
                 letter-spacing: 2.5px;
                 text-transform: uppercase;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid #ffffff;
+                outline: none;
+                &:hover {
+                    border-bottom: 1px solid #8dffbb;
+                }
             }
         }
         textarea {
@@ -89,6 +103,13 @@
             letter-spacing: 2.5px;
             text-transform: uppercase;
             resize: none;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            outline: none;
+            &:hover {
+                border-bottom: 1px solid #8dffbb;
+            }
         }
     }
     &__down {
@@ -111,12 +132,43 @@
         }
     }
     &__button {
+        position: relative;
         color: #ffffff;
         font-size: 10px;
         font-weight: 600;
         letter-spacing: 2.5px;
         text-transform: uppercase;
         margin-right: 20px;
+        &:before {
+            content: '';
+            background: url(../icons/contacts_frame.png) no-repeat;
+            top: -16px;
+            left: -40px;
+            width: 202px;
+            height: 48px;
+            position: absolute;
+        }
     }
-    
+    &__lines {
+        &-left {
+            position: absolute;
+            bottom: 127px;
+            left: 0;
+        }
+        &-arrow {
+            position: absolute;
+            bottom: 30px;
+            left: 146px;
+        }
+        &-right {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+        }
+        &-mini {
+            position: absolute;
+            bottom: 41px;
+            right: 201px;
+        }
+    }
 }

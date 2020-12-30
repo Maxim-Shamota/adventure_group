@@ -1,0 +1,19 @@
+.footer {
+    height: 63px;
+    background-color: #15181b;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px 0 69px;
+    &__social-link {
+        &-fb {
+            padding-left: 34px;
+        }
+    }
+    &__text {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+    }
+}
