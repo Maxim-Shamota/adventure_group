@@ -1,0 +1,49 @@
+.menu {
+    background: url(../img/menu_bg.jpg) center (center/cover) no-repeat;
+    height: 100%;
+    width: 275px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    ul {
+        list-style: none;
+        padding-left: 51px;
+        padding-top: 64px;
+        li {
+            padding-bottom: 34px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3.5px;
+            text-transform: uppercase;
+        }
+    }
+    &__text {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 3.5px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 130px;
+    }
+    &__social {
+        padding-top: 31px;
+        text-align: center;
+    }
+    &__line-mini {
+        position: absolute;
+        top: 73px;
+        left: 14px;
+    }
+    &__line {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &__arrow {
+        position: absolute;
+        bottom: 231px;
+        left: 44px;
+    }
+}

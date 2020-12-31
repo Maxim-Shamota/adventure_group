@@ -8,6 +8,8 @@
 @import 'blocks/portfolio';
 @import 'blocks/contacts';
 @import 'blocks/footer';
+@import 'blocks/media';
+@import 'blocks/menu';
 
 * {
     box-sizing: border-box;
@@ -21,4 +23,8 @@ a {
         text-decoration: none;
         color: #8dffbb;
     }
+}
+.container {
+    display: flex;
+    justify-content: space-between;
 }

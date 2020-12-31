@@ -1,16 +1,11 @@
 .portfolio {
     position: relative;
-    height: 977px;
+    min-height: 977px;
     padding-top: 43px;
-    &__roof {
-        display: flex;
-        justify-content: space-between;
-    }
+    background-color: #15181b;
     &__wrapper {
-        position: absolute;
         top: 0;
         width: 100%;
-        z-index: -1;
     }
     &__items {
         width: 100%;

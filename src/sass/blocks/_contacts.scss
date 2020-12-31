@@ -1,12 +1,9 @@
 .contacts {
     position: relative;
+    width: 100%;
     min-height: 658px;
     background: url(../img/main_bg4.jpg) center (center/cover) no-repeat;
-    padding-top: 43px;
-    &__roof {
-        display: flex;
-        justify-content: space-between;
-    }
+    padding-top: 78px;
     &__title {
         color: #ffffff;
         font-size: 24px;

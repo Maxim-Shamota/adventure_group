@@ -1,14 +1,12 @@
 .main {
     background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
     height: 650px;
-    &__roof {
-        padding-top: 43px;
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    position: relative;
     &__logo {
         &-logo {
             padding-left: 68px;
+            padding-top: 43px;
         }
         &-title {
             display: block;
@@ -45,7 +43,7 @@
         &-right {
             position: absolute;
             top: 310px;
-            right: 0;
+            right: 26px;
         }
         &-down {
             position: absolute;
@@ -53,5 +51,10 @@
             left: 53%;
             z-index: 1;
         }
+    }
+    .menu {
+        width: 275px;
+        height: 100%;
+        background: url(../img/menu_bg.jpg) center (center/cover) no-repeat;
     }
 }
