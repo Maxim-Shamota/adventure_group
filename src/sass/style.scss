@@ -10,6 +10,7 @@
 @import 'blocks/footer';
 @import 'blocks/media';
 @import 'blocks/menu';
+@import 'blocks/all-cases';
 
 * {
     box-sizing: border-box;
@@ -25,6 +26,6 @@ a {
     }
 }
 .container {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
 }

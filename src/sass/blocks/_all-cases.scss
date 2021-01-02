@@ -1,0 +1,50 @@
+.all-cases {
+    .portfolio {
+        padding-top: 0;
+    }
+    &__logo {
+        position: absolute;
+        z-index: 1;
+        &-logo {
+            padding-left: 68px;
+            padding-top: 43px;
+        }
+        &-title {
+            display: block;
+            padding-top: 13px;
+            padding-left: 64px;
+        }
+        &-subtitle {
+            margin-top: -8px;
+            padding-left: 99px;
+            line-height: 0;
+        }
+    }
+    &__contacts {
+        padding-top: 0;
+    min-height: 210px;
+    background: url(../img/all-cases-bg.jpg) right no-repeat;
+    background-color: #020302;
+    &-text {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        padding-top: 50px;
+        padding-left: 192px;
+        padding-bottom: 25px;
+    }
+    &-button {
+        padding-left: 228px;
+        position: relative;
+        &:before {
+            content: '';
+            background: url(../icons/contacts_frame.png) no-repeat;
+            top: -11px;
+            left: 195px;
+            width: 202px;
+            height: 48px;
+            position: absolute;
+        }
+    }
+    }
+}
