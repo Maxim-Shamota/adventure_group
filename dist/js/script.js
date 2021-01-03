@@ -15,3 +15,11 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Modal
+$('[data-modal=popup]').on('click', function() {
+    $('.overlay,#popup').fadeIn('slow');
+});
+$('.modal__close').on('click', function() {
+    $('.overlay,#popup').fadeOut('slow');
+});
