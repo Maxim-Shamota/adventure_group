@@ -37,6 +37,11 @@
             display: none;
         }
     }
+    .modal {
+        &__lines-arrow {
+            left: 64px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -104,6 +109,11 @@
         }
         &__contacts {
             margin-left: -126px;
+        }
+    }
+    .modal {
+        &__lines-arrow {
+            left: 64px;
         }
     }
 }
@@ -291,6 +301,23 @@
             }
         }
     }
+    .modal {
+        &__lines-arrow {
+            display: none;
+        }
+        &__form {
+            transform: scale(1);
+            &-wrapper {
+                display: block;
+            }
+            &-col2 {
+                padding-left: 0;
+            }
+        }
+        &__button {
+            margin-left: 0;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -464,7 +491,7 @@
     }
     .contacts {
         min-height: 661px;
-        padding: 37px 0 0 15px;
+        padding: 37px 20px 0 15px;
         background-color: #000000;
         background: url(../img/contacts-mobile-bg.png) center (center/cover) no-repeat;
         &__lines {
@@ -483,10 +510,15 @@
         &__form {
             margin-top: 13px;
             margin-left: -16px;
+            max-width: 410px;
+            transform: scale(1);
             &-wrapper {
                 flex-direction: column;
+                &_input {
+                    display: block;
+                    padding-left: 23px;
+                }
             }
-            transform: scale(1);
             &-col1 {
                 padding-left: 19px;
                 input {
@@ -500,8 +532,8 @@
                 }
             }
             textarea {
-                width: 83%;
-                margin-left: 22px;
+                width: 89%;
+                margin-left: 44px;
                 padding-bottom: 52px;
             }
         }
@@ -518,7 +550,7 @@
         }
         &__button {
             top: 30px;
-            left: 28%;
+            left: 35%;
         }
         &__mobile-lines {
             display: block;
@@ -560,7 +592,6 @@
             text-transform: uppercase;
         }
     }
-
     .headline {
         transform: scale(1);
         &-cases {
@@ -587,8 +618,117 @@
             }
         }
     }
+    .overlay {
+        .modal {
+            max-width: 100%;
+            background: url(../img/poppup-mobile-bg.jpg) center (center/cover) no-repeat !important;
+            padding-left: 30px !important;
+            padding-right: 40px;
+            &__title {
+                margin-top: -50px;
+            }
+            &__form {
+                transform: scale(1.1);
+                margin-top: 66px;
+                max-width: 355px;
+                &-col1 {
+                    input {
+                        width: 100% !important;
+                    }
+                }
+                &-col2 {
+                    input {
+                        width: 100% !important;
+                    }
+                }
+                textarea {
+                    width: 94% !important;
+                    margin-left: 20px;
+                }
+            }
     
+            &__down {
+                margin-top: 17px;
+                &-politics {
+                    width: 259px;
+                    p {
+                        font-size: 11px;
+                    }
+                }
+            } 
+            &__button {
+                top: 2px;
+                margin-left: 1px !important;
+            }
+            &__lines-up {
+                display: none;
+            }
+            &__lines-mobile {
+                display: block !important;
+                position: absolute;
+                top: 491px;
+                left: 0;
+            }
+        }
+    }
+    .case {
+        &__main {
+            display: none;
+        }
+        &__descr {
+            display: none;
+        }
+        &__video {
+            display: none;
+        }
+        &__foto1 {
+            &-block1 {
+                grid-column: 1/3;
+                grid-row-end: 1/3;
+            }
+            &-block2 {
+                display: none;
+            }
+            &-block3 {
+                display: none;
+            }
+        }
+        &__foto-gallery {
+            display: none;
+        }
+        &__foto2 {
+            grid-template-rows: repeat(1, 1fr);
+            &-block1 {
+                grid-column: 1/3;
+                grid-row-end: 1/3;
+            }
+            &-block2 {
+                display: none;
+            }
+            &-block3 {
+                display: none;
+            }
+            &-block4 {
+                display: none;
+            }
+        }
+        &__team {
+            display: none;
+        }
+        &__case-gallery {
+            min-height: 86px;
+            padding: 26px 20px 26px 19px;
+            p {
+                display: none;
+            }
+            &-center {
+                margin-top: 13px;
+            }
+        }
+        &__contacts {
+            
+        }
+    }
 }
 
-@media (max-width: 320px) {
-}
+

@@ -27,6 +27,9 @@
         }
         &__form {
             margin-left: 0;
+            &__wrapper {
+                display: flex;
+            }
             &-col1 {
                 input {
                     width: 144px;
@@ -64,6 +67,9 @@
             position: absolute;
             bottom: 49px;
             right: 64px;
+        }
+        &__lines-mobile {
+            display: none;
         }
     }
 }

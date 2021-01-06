@@ -70,24 +70,24 @@
         position: relative;
     }
     &__foto1 {
-        display: flex;
+        display: grid;
         height: 583px;
         background-color: #2f2f2f;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: auto;
         &-block1 {
-            width: 50%;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
-        }
-        &-col2 {
-            width: 50%;
+            grid-column: 1/2;
+            grid-row: 1/3;
         }
         &-block2 {
-            height: 291px;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
+            grid-column: 1/2;
+            grid-row: 1/2;
         }
         &-block3 {
-            height: 291px;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
-        }
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }        
     }
     &__foto-gallery {
         position: relative;
@@ -95,30 +95,27 @@
         background-color: #2f2f2f;
     }
     &__foto2 {
-        display: flex;
+        display: grid;
         min-height: 649px;
         background-color: #2f2f2f;
-        &-col1 {
-            width: 50%;
-        }
-        &-col2 {
-            width: 50%;
-        }
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-auto-rows: auto;
         &-block1 {
-            height: 324px;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
+            grid-column: 1/2;
+            grid-row: 1/2;
         }
         &-block2 {
-            height: 324px;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
+            grid-column: 2/3;
+            grid-row: 1/2;
         }
         &-block3 {
-            height: 324px;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
+            grid-column: 1/2;
+            grid-row: 2/3;
         }
         &-block4 {
-            height: 324px;
-            border: 1px solid #000; // временный бордер - для обозначения пустого блока
+            grid-column: 2/3;
+            grid-row: 2/3;
         }
     }
     &__team {

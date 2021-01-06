@@ -13,12 +13,6 @@
 <body>
     <div class="container">
         <div class="wrapper">
-            <div class="all-cases__logo">
-                <img src="icons/logo.png" alt="logo" class="all-cases__logo-logo">
-                <img src="icons/title.png" alt="title" class="all-cases__logo-title">
-                <img src="icons/subtitle.png" alt="subtitle" class="all-cases__logo-subtitle">
-            </div>
-
             <div class="case__main">
                 <img src="icons/main_lines-up.png" alt="lines" class="main__lines-up">
                 <a href="#" class="case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
@@ -45,11 +39,9 @@
             </div>
 
             <div class="case__foto1">
-                <div class="case__foto1-block1"></div>
-                <div class="case__foto1-col2">
-                    <div class="case__foto1-block2"></div>
-                    <div class="case__foto1-block3"></div>
-                </div>
+                <div class="case__foto1-block1" id="foto1-block1"></div>           
+                <div class="case__foto1-block2" id="foto1-block2"></div>
+                <div class="case__foto1-block3" id="foto1-block3"></div>              
             </div>
 
             <div class="case__foto-gallery">
@@ -58,14 +50,10 @@
             </div>
 
             <div class="case__foto2">
-                <div class="case__foto2-col1">
-                    <div class="case__foto2-block1"></div>
-                    <div class="case__foto2-block3"></div>
-                </div>
-                <div class="case__foto2-col2">
-                    <div class="case__foto2-block2"></div>
-                    <div class="case__foto2-block4"></div>
-                </div>
+                <div class="case__foto2-block1"></div>
+                <div class="case__foto2-block2"></div>
+                <div class="case__foto2-block3"></div>
+                <div class="case__foto2-block4"></div>
             </div>
 
             <div class="case__team">
@@ -137,18 +125,29 @@
                 </div>
             </div>
 
-            <div class="case__contacts all-cases__contacts">
-                <p class="all-cases__contacts-text">В поисках нового уровня ?</p>
-                <a href="#" data-modal="popup" class="all-cases__contacts-button">отправить заявку</a>
+            <div class="all-cases__contacts">
+                <div class="all-cases__contacts-wrapper">
+                    <p class="all-cases__contacts-text">В поисках нового уровня ?</p>
+                    <a href="#" data-modal="popup" class="all-cases__contacts-button">отправить заявку</a>
+                </div>
             </div>
 
             <footer class="footer">
-                <div class="footer__social-link">
-                    <a href="#" class="footer__social-link-insta"><img src="icons/instagram.svg" alt="instagram"></a>
-                    <a href="#" class="footer__social-link-fb"><img src="icons/facebook.svg" alt="facebook"></a>
+                <div class="footer__wrapper">
+                    <div class="footer__social-link">
+                        <a href="#" class="footer__social-link-insta"><img src="icons/instagram.svg" alt="instagram"></a>
+                        <a href="#" class="footer__social-link-fb"><img src="icons/facebook.svg" alt="facebook"></a>
+                    </div>
+                    <div class="footer__text">Copyrights © 2020 by adventure group. <span>All Rights Reserved</span></div>
                 </div>
-                <div class="footer__text">Copyrights © 2020 by adventure group. All Rights Reserved</div>
+                <div class="footer-mobile">© 2020 by adventure group</div>
             </footer>
+
+            <div class="main__logo">
+                <img src="icons/logo.png" alt="logo" class="main__logo-logo">
+                <img src="icons/title.png" alt="title" class="main__logo-title">
+                <img src="icons/subtitle.png" alt="subtitle" class="main__logo-subtitle">
+            </div>
         </div>
 
         <div class="headline">
@@ -156,7 +155,7 @@
             <div class="headline-inner">
                 <div class="headline__buttons">
                     <a href="#" class="headline-cases">кейсы</a>   
-                    <a href="#" class="headline-contacts">контакты</a>
+                    <a href="case.html" class="headline-contacts">контакты</a>
                     <div class="headline-menu">
                         <div class="headline-menu__humburger">
                             <span class="headline-menu__humburger-line1"></span>
@@ -200,29 +199,30 @@
                 <a href="#" class="modal__close"><img src="icons/modal-close.png" alt="close"></a>
                 <div class="modal__title">Заполните форму <br>
                 и мы с вами свяжемся!</div>
-                <form action="#" class="contacts__form modal__form">
-                    <div class="contacts__form-wrapper">
-                        <div class="contacts__form-col1 modal__form-col1">
+                <form action="#" class="modal__form contacts__form">
+                    <div class="modal____form-wrapper contacts__form-wrapper">
+                        <div class="modal__form-col1 contacts__form-col1">
                             <input name="name" placeholder="ВАШЕ ИМЯ" type="text" required>
                             <input name="phone" placeholder="ВАШ ТЕЛЕФОН" required>
                         </div>
-                        <div class="contacts__form-col2 modal__form-col2">
+                        <div class="modal__form-col2 contacts__form-col2">
                             <input name="company_name" placeholder="НАЗВАНИЕ КОМПАНИИ" type="text">
                             <input name="email" placeholder="ВАШ E-MAIL" type="email" required>
                         </div>
                     </div>
                     <textarea name="message" rows="2" placeholder='Какую задачу вы хотели бы решить вместе с нами?'></textarea>
-                    <div class="contacts__down modal__down">
-                        <div class="contacts__down-politics modal__down-politics">
-                            <img src="icons/contacts_checkbox.svg" alt="checkbox" class="contacts__down-checkbox modal__down-checkbox">
-                            <p class="contacts__down-text modal__down-text">Принимаю условия <span><a href="#">пользовательского <br>
+                    <div class="modal__down contacts__down">
+                        <div class="modal__down-politics contacts__down-politics">
+                            <img src="icons/contacts_checkbox.svg" alt="checkbox" class="modal__down-checkbox contacts__down-checkbox">
+                            <p class="modal__down-text contacts__down-text">Принимаю условия <span><a href="#">пользовательского <br>
                             соглашения</a></span> </p>
                         </div>
-                        <a href="#" data-modal="popup" class="contacts__button modal__button">отправить заявку</a>
+                        <a href="#" data-modal="popup" class="modal__button contacts__button">отправить заявку</a>
                     </div>
                 </form>
                 <img src="icons/modal-arrow.png" alt="arrow" class="modal__lines-arrow">
                 <img src="icons/modal-lines-up.png" alt="lines" class="modal__lines-up">
+                <img src="icons/modal-mobile-left.png" alt="lines" class="modal__lines-mobile">
             </div>
         </div>
     </div>
