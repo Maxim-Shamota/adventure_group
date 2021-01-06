@@ -1,5 +1,5 @@
 .car {
-    height: 650px;
+    min-height: 650px;
     background: url(../img/main_bg2.jpg) center (center/cover) no-repeat;
     padding-top: 43px;
     position: relative;
@@ -27,9 +27,15 @@
         }
     }
     &__points {
-        width: 460px;
+        max-width: 460px;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+    }
+    &__mobile-lines-right {
+        display: none;
+    }
+    &__mobile-lines-left {
+        display: none;
     }
 }

@@ -1,9 +1,11 @@
 .footer {
-    height: 63px;
+    min-height: 63px;
     background-color: #15181b;
-    display: flex;
-    justify-content: space-between;
     padding: 20px 60px 0 69px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     &__social-link {
         &-fb {
             padding-left: 34px;
@@ -15,5 +17,8 @@
         font-weight: 600;
         letter-spacing: 3.5px;
         text-transform: uppercase;
+    }
+    &-mobile {
+        display: none;
     }
 }

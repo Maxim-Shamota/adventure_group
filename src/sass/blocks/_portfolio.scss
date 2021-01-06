@@ -1,7 +1,6 @@
 .portfolio {
     position: relative;
     min-height: 977px;
-    padding-top: 43px;
     background-color: #15181b;
     &__wrapper {
         top: 0;
@@ -10,7 +9,7 @@
     &__items {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(428px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(426px, 1fr));
         grid-template-rows: repeat(3, minmax(327px, auto));
         grid-auto-rows: minmax(327px, auto);
     }

@@ -1,9 +1,12 @@
 .main {
     background: url(../img/main_bg.jpg) center (center/cover) no-repeat;
-    height: 650px;
+    min-height: 650px;
     display: flex;
     position: relative;
     &__logo {
+        position: absolute;
+        top: -13px;
+        left: -32px;
         &-logo {
             padding-left: 68px;
             padding-top: 43px;
@@ -56,5 +59,19 @@
         width: 275px;
         height: 100%;
         background: url(../img/menu_bg.jpg) center (center/cover) no-repeat;
+    }
+    &-mobile {
+        &-left1 {
+            display: none;
+        }
+        &-left2 {
+            display: none;
+        }
+        &-right1 {
+            display: none;
+        }
+        &-right2 {
+            display: none;
+        }
     }
 }

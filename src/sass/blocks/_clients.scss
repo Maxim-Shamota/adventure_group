@@ -1,6 +1,6 @@
 .clients {
     position: relative;
-    height: 650px;
+    min-height: 650px;
     background-color: #15181b;
     padding-top: 96px;
     &__title {
@@ -11,16 +11,13 @@
         text-align: center;
     }
     &__logos {
-        width: 870px;
+        max-width: 870px;
         margin: 0 auto;
         margin-top: 105px;
     }
-    &__logos-line {
-        margin-bottom: 58px;
-        
-    }
-    &__logo:not(:last-child) {
-        margin-right: 60px;
+    &__logo {
+        margin-right: 40px;
+        padding-bottom: 40px;
     }
     &__lines {
         &-item1 {
