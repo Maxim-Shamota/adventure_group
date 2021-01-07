@@ -4,6 +4,20 @@
             display: none;
         }
     }
+    .case {
+        &__team {
+            &-text {
+                &-col2 {
+                    &-item3 {
+                        display: none;
+                    }
+                    &-item4 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1150px) {
@@ -40,6 +54,16 @@
     .modal {
         &__lines-arrow {
             left: 64px;
+        }
+    }
+    .case {
+        &__pointer {
+            &-left {
+                transform: scale(0.9);
+            }
+            &-right {
+                transform: scale(0.9);
+            }
         }
     }
 }
@@ -114,6 +138,59 @@
     .modal {
         &__lines-arrow {
             left: 64px;
+        }
+    }
+    .case {
+        &__pointer {
+            &-left {
+                transform: scale(0.8);
+                left: 78px !important;
+            }
+            &-right {
+                transform: scale(0.8);
+                right: 78px !important;
+            }
+        }
+        &__descr {
+            min-height: 325px !important;
+            padding: 40px 0 40px 0 !important;
+            &-title {
+                font-size: 19px !important;
+                padding-left: 41px !important;
+                span {
+                    font-size: 19px !important;
+                }
+            }
+            &-text {
+                padding-left: 42px !important;
+                padding-right: 41px !important;
+                font-size: 13px !important;
+            }
+            &-logo {
+                transform: scale(0.9) !important;
+                left: 41px !important;
+                top: 228px !important;
+            }
+            &__lines-item1 {
+                left: 42px !important;
+            }
+            &__lines-item2 {
+                left: 303px !important;
+            }
+            &__lines-item3 {
+                left: 303px !important;
+            }
+        }
+        &__team {
+            &-text {
+                font-size: 13px !important;
+                line-height: 25px !important;
+                padding-top: 59px !important;
+            }
+        }
+        &__case-gallery {
+            min-height: 131px !important;
+            padding: 44px 81px 44px 81px !important;
         }
     }
 }
@@ -316,6 +393,97 @@
         }
         &__button {
             margin-left: 0;
+        }
+    }
+    .case {
+        &__pointer {
+            &-left {
+                transform: scale(0.7);
+                left: 38px !important;
+            }
+            &-right {
+                transform: scale(0.7);
+                right: 38px !important;
+            }
+        }
+        &__descr {
+            padding: 25px 0 25px 0 !important;
+            &-title {
+                font-size: 16px !important;
+                padding-left: 25px !important;
+                span {
+                    font-size: 16px !important;
+                }
+            }
+            &-text {
+                padding-left: 25px !important;
+                padding-right: 25px !important;
+                font-size: 12px !important;
+            }
+            &-logo {
+                transform: scale(0.8) !important;
+                left: 25px !important;
+            }
+            &__lines-item1 {
+                display: none;
+            }
+            &__lines-item2 {
+                display: none;
+            }
+            &__lines-item3 {
+                display: none;
+            }
+        }
+        &__team {
+            min-height: 469px !important;
+            padding-top: 25px !important;
+            &-title {
+                font-size: 24px !important;
+            }
+            &-text {
+                font-size: 12px !important;
+                line-height: 20px !important;
+                padding-top: 25px !important;
+                &-col1 {
+                    padding-left: 25px !important;
+                    padding-right: 0 !important;
+                }
+            }
+            &__lines {
+                &-item1 {
+                    display: none;
+                }
+                &-item2 {
+                    display: none;
+                }
+                &-item3 {
+                    display: none;
+                }
+                &-arrow {
+                    display: none;
+                }
+                &-left {
+                    display: none;
+                }
+                &-right {
+                    display: none;
+                }
+                &-mini1 {
+                    display: none;
+                }&-mini2 {
+                    display: none;
+                }
+            }
+        }
+        &__case-gallery {
+            min-height: 86px !important;
+            padding: 26px 20px 26px 19px !important;
+            p {
+                display: none;
+            }
+            &-center {
+                margin-top: 13px !important;
+            }
         }
     }
 }
@@ -611,7 +779,8 @@
         }
         &__contacts {
             height: 286px;
-            background: url(../img/all-cases-contacts-mobile.jpg) right no-repeat;
+            background: url(../img/all-cases-contacts-mobile.jpg) right no-repeat !important;
+            background-color: #020302 !important;
             &-wrapper {
                 transform: scale(0.9);
                 text-align: center;
@@ -673,13 +842,45 @@
     }
     .case {
         &__main {
-            display: none;
+            .main__lines-up {
+                display: none;
+            }
+        }
+        &__pointer {
+            &-left {
+                display: none;
+            }
+            &-right {
+                display: none;
+            }
         }
         &__descr {
-            display: none;
-        }
-        &__video {
-            display: none;
+            min-height: 469px !important;
+            &-wrapper {
+                display: block !important;
+            }
+            &-title {
+                width: 100% !important;
+                font-size: 20px !important;
+                line-height: 28px !important;
+                padding-bottom: 50px !important;
+                padding-left: 20px !important;
+                padding-top: 30px !important;
+                span {
+                    font-size: 20px !important;
+                }
+            }
+            &-text {
+                width: 100% !important;
+                font-size: 11px !important;
+                line-height: 14px !important;
+                padding-left: 40px !important;
+            }
+            &-logo {
+                transform: scale(.4)!important;
+                top: 0 !important;
+                left: 83% !important;
+            }
         }
         &__foto1 {
             &-block1 {
@@ -713,17 +914,59 @@
             }
         }
         &__team {
-            display: none;
-        }
-        &__case-gallery {
-            min-height: 86px;
-            padding: 26px 20px 26px 19px;
-            p {
-                display: none;
+            min-height: 568px !important;
+            padding-top: 50px!important;
+            &-title {
+                font-size: 20px!important;
             }
-            &-center {
-                margin-top: 13px;
-            }
+            &-text {
+                justify-content: space-around !important  ;
+                padding-top: 80px!important;
+                &-col1 {
+                    width: 125px !important;
+                    padding-left: 0 !important;
+                    &-item2 {
+                        display: none;
+                    }
+                }
+                &-col2 {
+                    width: 125px !important;
+                    &-item3 {
+                        display: block;
+                    }
+                    &-item4 {
+                        display: block;
+                    }
+                }
+                &-name {
+                    font-size: 12px;
+                    font-weight: 600;
+                    letter-spacing: 2.4px;
+                    text-transform: uppercase;
+                }
+                &-position {
+                    font-size: 11px;
+                    font-weight: 400;
+                    line-height: 14px;
+                }
+            } 
+            &__lines {
+                &-item1 {
+                    display: block;
+                    top: 37px;
+                    left: 25%;
+                }
+                &-item2 {
+                    display: block;
+                    top: 89px;
+                    left: 51%;
+                }
+                &-item3 {
+                    display: block;
+                    top: 119px;
+                    left: 70%;
+                }
+            }         
         }
     }
 }
