@@ -40,10 +40,14 @@
             margin-left: -6px;
         }
     }
-    .car {
+    .main__slider {
         &__down {
             transform: scale(0.9);
-            padding-top: 535px;
+        }
+        .swiper-pagination {
+            transform: scale(0.9);
+            width: 600px;
+            left: 43%;
         }
     }
     .all-cases {
@@ -86,13 +90,19 @@
             transform: scale(0.8);
         }
     }
-    .car {
+    .main__slider {
         &__down {
             transform: scale(0.8);
-            padding-top: 555px;
+            bottom: 52px;
+            left: -18px;
         }
         &__descr {
             font-size: 13px;
+        }
+        .swiper-pagination {
+            transform: scale(0.8);
+            left: 49%;
+            width: 580px;
         }
     }
     .aboutUs {
@@ -265,6 +275,13 @@
             }
         }
     }
+    .main__slider {
+        .swiper-pagination {
+            transform: scale(0.8);
+            left: 40%;
+            width: 580px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -277,14 +294,21 @@
     .headline {
         transform: scale(0.7);
     }
-    .car {
+    .main__slider {
+        min-height: 250px;
         &__down {
             display: block;
             transform: scale(0.7);
             position: absolute;
+            bottom: 52px;
+            left: -50px;
         }
         &__descr {
             font-size: 12px;
+        }
+        .swiper-pagination {
+            transform: scale(0.7);
+            left: 23%;
         }
     }
     .aboutUs {
@@ -524,15 +548,15 @@
             }
         }
     }
-    .car {
-        height: 600px;
-        background: url(../img/car-mobile-bg.jpg) center (center/cover) no-repeat;
+    .main__slider {
+        min-height: 200px;
+        background: url(../img/main__slider-mobile-bg.jpg) center (center/cover) no-repeat;
         &__down {
             display: block;
             transform: scale(0.6);
             position: absolute;
-            bottom: -117px;
-            left: -91px;
+            bottom: 52px;
+            left: -50px;
             color: #ffffff;
             font-size: 12px;
             font-weight: 600;
@@ -549,10 +573,14 @@
             right: 19px;
         }
         &__mobile-lines-left {
-            display: block;
+            display: none;
             position: absolute;
             bottom: 254px;
             left: 0;
+        }
+        .swiper-pagination {
+            transform: scale(0.6);
+            left: -100px;
         }
     }
     .aboutUs {
@@ -970,5 +998,3 @@
         }
     }
 }
-
-

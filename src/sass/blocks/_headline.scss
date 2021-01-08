@@ -113,6 +113,15 @@
         right: 68px;
         top: 40px;
     }
+    #top-menu {
+        .active {
+            a {
+                left: -9px;
+                background: url(../icons/main_headline-active.png) center (center/cover) no-repeat;
+
+            }
+        }
+    }
     &-point1 {
         position: absolute;
         background: url(../icons/main_headline-point.png) no-repeat;
@@ -120,10 +129,12 @@
         height: 21px;
         left: -4px;
         top: 33px;
-        &:hover {
-            left: -9px;
-            background: url(../icons/main_headline-active.png);
-            top: 28px;
+        a {
+            .active {
+                left: -9px;
+                background: url(../icons/main_headline-active.png);
+                top: 28px;
+            }
         }
     }
     &-point2 {
@@ -133,10 +144,12 @@
         height: 21px;
         left: -4px;
         top: 83px;
-        &:hover {
-            left: -9px;
-            background: url(../icons/main_headline-active.png);
-            top: 78px;
+        a {
+            .active {
+                left: -9px;
+                background: url(../icons/main_headline-active.png);
+                top: 78px;
+            }
         }
     }
     &-point3 {
@@ -146,7 +159,7 @@
         height: 21px;
         left: -4px;
         top: 133px;
-        &:hover {
+        .active {
             left: -9px;
             background: url(../icons/main_headline-active.png);
             top: 128px;
@@ -159,7 +172,7 @@
         height: 21px;
         left: -4px;
         top: 183px;
-        &:hover {
+        .active {
             left: -9px;
             background: url(../icons/main_headline-active.png);
             top: 178px;
