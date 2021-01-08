@@ -18,6 +18,9 @@
     &__logo {
         margin-right: 40px;
         padding-bottom: 40px;
+        &:hover {
+            opacity: 0.5;
+        }
     }
     &__lines {
         &-item1 {
