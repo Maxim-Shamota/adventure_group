@@ -191,10 +191,13 @@
             margin-top: -13px;
         }
         &-center a{
-            img {
-                margin-top: -17px;
+            background: url(../icons/case-gallery.png) center no-repeat;
+            margin-top: -17px;
+                &:hover {
+                    background: url(../icons/case-gallery-hover.svg) center no-repeat;
+                }
             }
-        }
+        
         &-right {
             padding-top: 5px;
         }

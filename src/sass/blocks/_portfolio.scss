@@ -49,6 +49,8 @@
             left: 10px;
         }
         &-descr {
+            display: flex;
+            align-items: center;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -60,7 +62,6 @@
             font-weight: 600;
             letter-spacing: 3.5px;
             text-transform: uppercase;
-            padding-top: 22px;
             padding-left: 4%;
         }
     }

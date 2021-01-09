@@ -47,7 +47,7 @@
                 margin-bottom: 41px;
                 height: 45px;
                 padding-bottom: 25px;
-                color: #777777;
+                color: #fff;
                 font-size: 10px;
                 font-weight: 600;
                 letter-spacing: 2.5px;
@@ -73,7 +73,7 @@
                 margin-bottom: 41px;
                 height: 45px;
                 padding-bottom: 25px;
-                color: #777777;
+                color: #fff;
                 font-size: 10px;
                 font-weight: 600;
                 letter-spacing: 2.5px;
@@ -82,7 +82,7 @@
                 border: none;
                 border-bottom: 1px solid #ffffff;
                 outline: none;
-                &:hover {
+                &:focus {
                     border-bottom: 1px solid #8dffbb;
                 }
             }
@@ -92,7 +92,7 @@
             margin-bottom: 41px;
             height: 52px;
             padding-top: 4px;
-            color: #777777;
+            color: #fff;
             font-size: 10px;
             font-weight: 600;
             letter-spacing: 2.5px;
@@ -102,7 +102,7 @@
             border: none;
             border-bottom: 1px solid #ffffff;
             outline: none;
-            &:hover {
+            &:focus {
                 border-bottom: 1px solid #8dffbb;
             }
         }
@@ -112,8 +112,10 @@
         justify-content: space-between;
         padding-top: 24px;
         max-width: 766px;
+        max-height: 50px;
         &-politics {
             display: flex;
+            justify-content: start;
             p {
                 margin-bottom: 0;
                 padding-left: 19px;
