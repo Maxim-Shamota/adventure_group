@@ -102,6 +102,38 @@ new Swiper('.main__slider-container', {
     //pausa
     delay: 3000
   },
+});
 
 
+//case__main
+new Swiper('.case__main-swiper-container', {
+  navigation: {
+    nextEl: '.case__main-pointer-right',
+    prevEl: '.case__main-pointer-left'
+  },
+
+  //бесконечность
+  loop: true
+});
+
+//case__video
+new Swiper('.case__video-swiper-container', {
+  navigation: {
+    nextEl: '.case__video-pointer-right',
+    prevEl: '.case__video-pointer-left'
+  },
+
+  //бесконечность
+  loop: true
+});
+
+//case__foto-gallery
+new Swiper('.case__foto-gallery-swiper-container', {
+  navigation: {
+    nextEl: '.case__foto-gallery-pointer-right',
+    prevEl: '.case__foto-gallery-pointer-left'
+  },
+
+  //бесконечность
+  loop: true
 });

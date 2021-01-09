@@ -127,6 +127,16 @@
                 }
             }
         }
+        &-text {
+            &-hidden {
+                display: none;
+                max-width: 550px;
+                border-radius: 4px;
+                overflow: hidden;
+                transform: translateY(-50px);
+                transition: all .7s;
+            }
+        }
     }
     &__button {
         position: relative;

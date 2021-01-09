@@ -11,11 +11,16 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(426px, 1fr));
         grid-template-rows: repeat(3, minmax(327px, auto));
-        grid-auto-rows: minmax(327px, auto);
+        grid-auto-rows: minmax(327px, auto);        
     }
     &__item {
         width: 100%;
-        position: relative;
+        position: relative;   
+        transition: 2s;         
+        &:hover {   
+            background-size: 120%; 
+            transition: 2s !important;                      
+        }
         &1 {
             background: url(../img/portfolio/portfolio1.jpg) center (center/cover) no-repeat;
         }
@@ -42,11 +47,14 @@
         }
         &9 {
             background: url(../img/portfolio/portfolio3.jpg) center (center/cover) no-repeat;
-        }
+        }                      
         &-logo {
+            background: url(../icons/portfolio__item-logo.svg)center no-repeat;
             position: absolute;
             bottom: 73px;
             left: 10px;
+            width: 39px;
+            height: 37px;
         }
         &-descr {
             display: flex;

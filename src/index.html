@@ -7,6 +7,7 @@
     <title>Adventure Group</title>
     <meta name="title" content="Adventure Group">
     <meta name="description" content="Парящие сцены, неоновое свечение, авторские инсталляции">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -203,41 +204,39 @@
                 <div class="portfolio__wrapper">
                     <div class="portfolio__items">
                         <a href="#" class="portfolio__item portfolio__item1">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
-                            <div class="portfolio__item-descr">
-                                SHAKIRA EL DORADO–TOURING STAGE
-                            </div>
+                            <div class="portfolio__item-logo"></div>                            
+                            <div class="portfolio__item-descr">SHAKIRA EL DORADO–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item2">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">COACHELLA: KASKADE–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item3">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">AMON TOBIN ISAM–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item4">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">SHAKIRA EL DORADO–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item5">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">COACHELLA: KASKADE–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item6">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">AMON TOBIN ISAM–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item7">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">SHAKIRA EL DORADO–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item8">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">COACHELLA: KASKADE–TOURING STAGE </div>
                         </a>
                         <a href="#" class="portfolio__item portfolio__item9">
-                            <img src="icons/portfolio__item-logo.svg" alt="logo" class="portfolio__item-logo">
+                            <div class="portfolio__item-logo"></div>  
                             <div class="portfolio__item-descr">AMON TOBIN ISAM–TOURING STAGE </div>
                         </a>
                     </div>
@@ -274,11 +273,15 @@
                     <div class="contacts__down">
                         <div class="contacts__down-politics">
                             <img src="icons/contacts_checkbox.svg" alt="checkbox" class="contacts__down-checkbox">
-                            <p class="contacts__down-text">Принимаю условия <span><a href="#">пользовательского соглашения</a></span> </p>
+                            <p class="contacts__down-text">Принимаю условия <span><a data-fancybox data-src="#hidden-content" href="javascript:;">пользовательского соглашения</a></span> </p>
                         </div>
                         <a href="#" class="contacts__button">отправить заявку</a>
                     </div>
                 </form>
+
+                <div class="contacts__down-text-hidden" id="hidden-content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati soluta vel, eos placeat voluptas praesentium esse eum saepe. Distinctio modi expedita corrupti explicabo, sed sit repellendus minus sapiente! Dolore tempore inventore assumenda, provident perferendis cupiditate, blanditiis ad, est placeat error officiis facere aliquam sequi esse nostrum molestias eveniet suscipit voluptatibus distinctio doloremque? Quisquam iusto necessitatibus veniam error, itaque sequi magnam asperiores vitae iste. Iure, necessitatibus odit ab repellat eligendi animi porro officia ipsum suscipit, aliquid neque dolor quod minus quo voluptates reprehenderit tenetur perferendis! Doloremque recusandae veniam asperiores labore quo rerum porro natus dignissimos eaque odio vitae numquam accusamus omnis nisi, error aut ipsum? Placeat dolorem quas sequi. Magni quae error dolorem omnis! Dolore commodi quam, repellat consequatur nobis est ea doloremque suscipit labore! Qui hic incidunt numquam deleniti perspiciatis expedita dolor amet. Illo corrupti saepe eius dolorem? Ratione, sunt nihil. Fuga ab itaque iure iste facilis. Facere cum amet exercitationem culpa aspernatur architecto reiciendis aliquid quidem quas repudiandae reprehenderit accusantium rerum eum ipsa omnis laboriosam expedita animi et, tempore modi eligendi vitae atque. Aliquid officiis tenetur fugit itaque illo commodi ea ipsa magni dolore placeat mollitia fuga repellendus iusto voluptas exercitationem adipisci, aperiam esse maxime debitis blanditiis qui recusandae!</p>
+                </div>
         
                 <div class="contacts__lines">
                     <img src="icons/contacts_lines-left.png" alt="lines" class="contacts__lines-left">
@@ -359,6 +362,7 @@
 
     </div>
 
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

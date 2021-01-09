@@ -7,25 +7,59 @@
     <title>Adventure Group</title>
     <meta name="title" content="Adventure Group/case">
     <meta name="description" content="Наш кейс">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="container">
         <div class="wrapper">
             <div class="case__main" id="top">
+                <!-- Slider main container -->
+                <div class="case__main-swiper-container swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="case__main-swiper-wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="case__main-swiper-slide swiper-slide">
+                            <div class="case__main-swiper-images">
+                                <img src="img/main_bg.jpg" alt="foto1" class="case__main-swiper-image1">
+                            </div>
+                        </div>
+                        <div class="case__main-swiper-slide swiper-slide">
+                            <div class="case__main-swiper-images">
+                                <img src="img/main_bg.jpg" alt="foto2" class="case__main-swiper-image2">
+                            </div>
+                        </div>
+                        <div class="case__main-swiper-slide swiper-slide">
+                            <div class="case__main-swiper-images">
+                                <img src="img/main_bg.jpg" alt="foto3" class="case__main-swiper-image3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination
+                    <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="case__main-swiper-button-prev button-prev"></div>
+                    <div class="case__main-swiper-button-next swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar
+                    <div class="swiper-scrollbar"></div> -->
+                </div>
                 <img src="icons/main_lines-up.png" alt="lines" class="main__lines-up">
-                <a href="#" class="case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
-                <a href="#" class="case__pointer-right"><img src="icons/case_pointer-right.svg" alt="pointer-right"></a>
+                <a href="#" class="case__main-pointer-left case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
+                <a href="#" class="case__main-pointer-right case__pointer-right"><img src="icons/case_pointer-right.svg" alt="pointer-right"></a>
             </div>
 
             <div class="case__descr">
                 <div class="case__descr-wrapper">
                     <h1 class="case__descr-title">Парящие сцены, неоновое свечение, авторские инсталляции – это про <span>Adventure Group</span> </h1>
-                    <p class="case__descr-text">Мы делаем шоу, опережающие своё время. К нам обращаются как за арендой оборудования, так и за сложной застройкой сценических павильонов с использованием робототехники. 
-                    <br><br>
-                    Наши партнёры – мировые компании-производители оборудования для технического обеспечения мероприятий: CHAIN MASTER, MOVECAT, PROLYTE, LAYHER, KINESYS APEX , GIS EVO. 
-                    </p>
+                    <div class="case__descr-text">
+                        <p>Мы делаем шоу, опережающие своё время. К нам обращаются как за арендой оборудования, так и за сложной застройкой сценических павильонов с использованием робототехники. 
+                        </p>
+                        <p>
+                        Наши партнёры – мировые компании-производители оборудования для технического обеспечения мероприятий: CHAIN MASTER, MOVECAT, PROLYTE, LAYHER, KINESYS APEX , GIS EVO. 
+                        </p>
+                    </div>
                 </div>
                 <img src="icons/clients_lines-item1.png" alt="lines" class="case__descr__lines-item1">
                 <img src="icons/clients_lines-item2.png" alt="lines" class="case__descr__lines-item2">
@@ -34,8 +68,39 @@
             </div>
 
             <div class="case__video">
-                <a href="#" class="case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
-                <a href="#" class="case__pointer-right"><img src="icons/case_pointer-right.svg" alt="pointer-right"></a>
+                <!-- Slider main container -->
+                <div class="case__video-swiper-container swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="case__video-swiper-wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="case__video-swiper-slide swiper-slide">
+                            <div class="case__video-swiper-images">
+                                <img src="img/main_bg.jpg" alt="video1" class="case__video-swiper-video1">
+                            </div>
+                        </div>
+                        <div class="case__video-swiper-slide swiper-slide">
+                            <div class="case__video-swiper-images">
+                                <img src="img/main_bg.jpg" alt="video2" class="case__video-swiper-video2">
+                            </div>
+                        </div>
+                        <div class="case__video-swiper-slide swiper-slide">
+                            <div class="case__video-swiper-images">
+                                <img src="img/main_bg.jpg" alt="video3" class="case__video-swiper-video3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination
+                    <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="case__main-swiper-button-prev button-prev"></div>
+                    <div class="case__main-swiper-button-next swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar
+                    <div class="swiper-scrollbar"></div> -->
+                </div>
+                <a href="#" class="case__video-pointer-left case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
+                <a href="#" class="case__video-pointer-right case__pointer-right"><img src="icons/case_pointer-right.svg" alt="pointer-right"></a>
             </div>
 
             <div class="case__foto1" id="foto1">
@@ -45,8 +110,39 @@
             </div>
 
             <div class="case__foto-gallery">
-                <a href="#" class="case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
-                <a href="#" class="case__pointer-right"><img src="icons/case_pointer-right.svg" alt="pointer-right"></a>
+                <!-- Slider main container -->
+                <div class="case__foto-gallery-swiper-container swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="case__foto-gallery-swiper-wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="case__foto-gallery-swiper-slide swiper-slide">
+                            <div class="case__foto-gallery-swiper-images">
+                                <img src="img/main_bg.jpg" alt="foto1" class="case__foto-gallery-swiper-image1">
+                            </div>
+                        </div>
+                        <div class="case__foto-gallery-swiper-slide swiper-slide">
+                            <div class="case__foto-gallery-swiper-images">
+                                <img src="img/main_bg.jpg" alt="foto2" class="case__foto-gallery-swiper-image2">
+                            </div>
+                        </div>
+                        <div class="case__foto-gallery-swiper-slide swiper-slide">
+                            <div class="case__foto-gallery-swiper-images">
+                                <img src="img/main_bg.jpg" alt="foto3" class="case__foto-gallery-swiper-image3">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination
+                    <div class="swiper-pagination"></div> -->
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="case__main-swiper-button-prev button-prev"></div>
+                    <div class="case__main-swiper-button-next swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar
+                    <div class="swiper-scrollbar"></div> -->
+                </div>
+                <a href="#" class="case__foto-gallery-pointer-left case__pointer-left"><img src="icons/case_pointer-left.svg" alt="pointer-left"></a>
+                <a href="#" class="case__foto-gallery-pointer-right case__pointer-right"><img src="icons/case_pointer-right.svg" alt="pointer-right"></a>
             </div>
 
             <div class="case__foto2" id="foto2">
@@ -57,45 +153,45 @@
             </div>
 
             <div class="case__team" id="team">
-                <div class="case__team-title">Команда</div>
+                <h3 class="case__team-title">Команда</h3>
                 <div class="case__team-text">
                     <div class="case__team-text-col1">
                         <div class="case__team-text-col1-item1">
-                            <h3 class="case__team-text-name case__team-text-col1-item1-name">DARLA JEAN PATTERSON</h3>
+                            <div class="case__team-text-name case__team-text-col1-item1-name">DARLA JEAN PATTERSON</div>
                             <p class="case__team-text-position case__team-text-col1-item1-position">Art Director / Creative Producer</p>
                         </div>
                         <div class="case__team-text-col1-item2">
-                            <h3 class="case__team-text-name case__team-text-col1-item2-name">EMILY ARK</h3>
+                            <div class="case__team-text-name case__team-text-col1-item2-name">EMILY ARK</div>
                             <p class="case__team-text-position case__team-text-col1-item2-position">Producer</p>
                         </div>
                         <div class="case__team-text-col1-item3">
-                            <h3 class="case__team-text-name case__team-text-col1-item3-name">TWIN DESIGNS</h3>
+                            <div class="case__team-text-name case__team-text-col1-item3-name">TWIN DESIGNS</div>
                             <p class="case__team-text-position case__team-text-col1-item3-position">Lighting Designer</p>
                         </div>
                         <div class="case__team-text-col1-item4">
-                            <h3 class="case__team-text-name case__team-text-col1-item4-name">DAMIEN ARANDA</h3>
+                            <div class="case__team-text-name case__team-text-col1-item4-name">DAMIEN ARANDA</div>
                             <p class="case__team-text-position case__team-text-col1-item4-position">Lead Architect</p>
                         </div>
                         <div class="case__team-text-col1-item5">
-                            <h3 class="case__team-text-name case__team-text-col1-item5-name">MATT HEINZLER</h3>
+                            <div class="case__team-text-name case__team-text-col1-item5-name">MATT HEINZLER</div>
                             <p class="case__team-text-position case__team-text-col1-item5-position">Assistant Designer / CAD Designer</p>
                         </div>
                     </div>
                     <div class="case__team-text-col2">
                         <div class="case__team-text-col2-item1">
-                            <h3 class="case__team-text-name case__team-text-col2-item1-name">DARLA JEAN PATTERSON</h3>
+                            <div class="case__team-text-name case__team-text-col2-item1-name">DARLA JEAN PATTERSON</div>
                             <p class="case__team-text-position case__team-text-col2-item1-position">Art Director / Creative Producer</p>
                         </div>
                         <div class="case__team-text-col2-item2">
-                            <h3 class="case__team-text-name case__team-text-col2-item2-name">TWIN DESIGNS</h3>
+                            <div class="case__team-text-name case__team-text-col2-item2-name">TWIN DESIGNS</div>
                             <p class="case__team-text-position case__team-text-col2-item2-position">Lighting Designer</p>
                         </div>
                         <div class="case__team-text-col2-item3">
-                            <h3 class="case__team-text-name case__team-text-col2-item3-name">DAMIEN ARANDA</h3>
+                            <div class="case__team-text-name case__team-text-col2-item3-name">DAMIEN ARANDA</div>
                             <p class="case__team-text-position case__team-text-col2-item3-position">Lead Architect</p>
                         </div>
                         <div class="case__team-text-col2-item4">
-                            <h3 class="case__team-text-name case__team-text-col2-item4-name">MATT HEINZLER</h3>
+                            <div class="case__team-text-name case__team-text-col2-item4-name">MATT HEINZLER</div>
                             <p class="case__team-text-position case__team-text-col2-item4-position">Assistant Designer / CAD Designer</p>
                         </div>
                     </div>
@@ -112,15 +208,13 @@
 
             <div class="case__case-gallery" >
                 <div class="case__case-gallery-left">
-                    <a href="#">
-                        <img src="icons/case-gallery-left.svg" alt="arrow">
+                    <a href="#">                       
                         <p>предыдущий кейс</p>
                     </a>
                 </div>
                 
                 <div class="case__case-gallery-center">
                     <a href="#">
-                        <img src="icons/case-gallery.png" alt="item">
                         <p>все кейсы</p>
                     </a>
                 </div>
@@ -128,7 +222,6 @@
                 <div class="case__case-gallery-right">
                     <a href="#">
                         <p>следующий кейс</p>
-                        <img src="icons/case-gallery-right.png" alt="arrow">
                     </a>
                 </div>
             </div>
@@ -237,6 +330,7 @@
     
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
